@@ -1,5 +1,5 @@
 import './Footer.css';
-
+//this is the footer section you can edit the footer here frontend only
 function Footer() {
   return (
     <footer className="footer">
