@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import './Header.css';
-
+//this is the header section you can edit the header here frontend only
 function Header() {
   return (
     <header className="header">
