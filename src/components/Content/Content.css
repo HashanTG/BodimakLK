@@ -11,6 +11,13 @@
   .hero-container {
     max-width: 72rem;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .hero-content {
+    flex: 1;
   }
   
   .hero-title {
@@ -59,17 +66,26 @@
   }
   
   .hero-image {
-    display: none;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
   }
   
   .welcome {
     padding: 4rem 1.5rem;
+    text-align: center;
+    background-color: #ffffff;
   }
   
   .welcome-container {
     max-width: 56rem;
     margin: 0 auto;
-    text-align: center;
   }
   
   .welcome-title {
@@ -79,27 +95,43 @@
     margin-bottom: 1rem;
   }
   
-  .welcome-description {
+  .welcome-description,
+  .welcome-highlight {
     color: #6b7280;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   
-  .user-types {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .yellow-highlight {
+    background-color: #f59e0b;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    font-weight: bold;
   }
   
-  .user-type {
+  .user-types-section {
+    background-color: #f9fafb;
+    padding: 4rem 1.5rem;
+  }
+  
+  .user-types-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  
+  .user-type-card {
     background-color: white;
     padding: 1.5rem;
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
+    flex: 1;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
   
-  .user-type:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  .user-type-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
   }
   
   .icon-container {
@@ -123,7 +155,21 @@
   
   .user-type-description {
     color: #6b7280;
+    white-space: pre-line;
   }
+  
+  .yellow-card-image {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .yellow-card-image img {
+    width: 80%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
   
   .features {
     background-color: #f9fafb;
