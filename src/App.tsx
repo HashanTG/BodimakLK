@@ -35,7 +35,7 @@ function App() {
     </h1>
 
     {/* Search Form */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl"> {/* Increased gap from 4 to 8 */}
       <div className="space-y-4">
         <div>
           <label className="block text-sm mb-1">Location</label>
@@ -81,7 +81,7 @@ function App() {
         </button>
       </div>
 
-      <div className="relative hidden md:block">
+      <div className="relative hidden md:block pl-12"> {/* Added padding-left */}
         <img
           src="src/assets/rb_2148653817 1.png"
           alt="Property Search Illustration"
@@ -91,6 +91,7 @@ function App() {
     </div>
   </div>
 </motion.section>
+
 
 
       {/* Welcome Section */}
