@@ -23,46 +23,75 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <motion.section 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="bg-yellow-400 rounded-b-[50px] px-6 py-12"
-      >
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl font-bold text-slate-800 mb-8">
-            "Find, Rent, Manage – Your Space, Your Way"
-          </h1>
-          {/* this is the search form */}
-          {/* Search Form */}
-          <div className="bg-white p-6 rounded-xl shadow-lg max-w-4xl">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-              <div className="col-span-1 md:col-span-2">
-                <input
-                  type="text"
-                  placeholder="Enter a state, locality or area"
-                  className="w-full p-3 border rounded-lg"
-                />
-              </div>
-              <div>
-                <select className="w-full p-3 border rounded-lg">
-                  <option>All types</option>
-                </select>
-              </div>
-              <div>
-                <select className="w-full p-3 border rounded-lg">
-                  <option>Any bedrooms</option>
-                </select>
-              </div>
-            </div>
-            <div className="mt-4 flex justify-center">
-              <button className="bg-slate-700 text-white px-8 py-3 rounded-lg hover:bg-slate-800 transition-colors">
-                Search
-              </button>
-            </div>
+      <motion.section
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 0.5 }}
+  className="bg-yellow-400 rounded-b-[50px] px-6 py-12"
+>
+  <div className="max-w-6xl mx-auto">
+    <h1 className="text-4xl font-bold text-slate-800 mb-8">
+      "Find, Rent, Manage – Your Space, Your Way"
+    </h1>
+
+    {/* Search Form */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl">
+      <div className="space-y-4">
+        <div>
+          <label className="block text-sm mb-1">Location</label>
+          <input
+            type="text"
+            placeholder="Enter a state, locality or area"
+            className="w-full p-3 bg-gray-100 rounded-lg"
+          />
+        </div>
+        
+        <div className="grid grid-cols-2 gap-4">
+          <div>
+            <label className="block text-sm mb-1">Type</label>
+            <select className="w-full p-3 bg-gray-100 rounded-lg">
+              <option>All types</option>
+            </select>
+          </div>
+          <div>
+            <label className="block text-sm mb-1">Bedrooms</label>
+            <select className="w-full p-3 bg-gray-100 rounded-lg">
+              <option>Any</option>
+            </select>
           </div>
         </div>
-      </motion.section>
+
+        <div className="grid grid-cols-2 gap-4">
+          <div>
+            <label className="block text-sm mb-1">Min price</label>
+            <select className="w-full p-3 bg-gray-100 rounded-lg">
+              <option>No Min</option>
+            </select>
+          </div>
+          <div>
+            <label className="block text-sm mb-1">Max price</label>
+            <select className="w-full p-3 bg-gray-100 rounded-lg">
+              <option>No Max</option>
+            </select>
+          </div>
+        </div>
+
+        <button className="w-full bg-slate-800 text-white py-3 rounded-lg hover:bg-slate-900 transition-colors">
+          Search
+        </button>
+      </div>
+
+      <div className="relative hidden md:block">
+        <img
+          src="src/assets/rb_2148653817 1.png"
+          alt="Property Search Illustration"
+          className="absolute right-0 top-0"
+        />
+      </div>
+    </div>
+  </div>
+</motion.section>
+
 
       {/* Welcome Section */}
       <motion.section 
