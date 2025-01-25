@@ -33,7 +33,7 @@ function App() {
           <h1 className="text-4xl font-bold text-slate-800 mb-8">
             "Find, Rent, Manage – Your Space, Your Way"
           </h1>
-          
+          {/* this is the search form */}
           {/* Search Form */}
           <div className="bg-white p-6 rounded-xl shadow-lg max-w-4xl">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
