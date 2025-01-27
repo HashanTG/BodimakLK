@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import {Home, Users, Settings, Shield } from 'lucide-react';
 import './Content.css';
-
+//this is the home sectio you can edit the landing page here frontend only
 function Content() {
   return (
     <div className="content">
