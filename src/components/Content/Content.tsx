@@ -1,6 +1,6 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
-import { Search, Home, Users, Settings, Shield } from 'lucide-react';
+import {Home, Users, Settings, Shield } from 'lucide-react';
 import './Content.css';
 
 function Content() {
