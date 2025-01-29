@@ -1,0 +1,44 @@
+.header {
+    background-color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f59e0b;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .sign-in {
+    padding: 0.5rem 1rem;
+    color: #4b5563;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sign-in:hover {
+    color: #1f2937;
+  }
+  
+  .sign-up {
+    padding: 0.5rem 1rem;
+    background-color: #4b5563;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sign-up:hover {
+    background-color: #374151;
+  }
